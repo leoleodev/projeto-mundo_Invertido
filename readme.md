@@ -5,7 +5,7 @@
 <br>
 <h4> Anotações Teóricas: </h4>
 
-<p> 🚩 5 tópicos importante para o desenvolvimento web </p>
+<p> 🚩 5 tópicos importantes para o desenvolvimento web </p>
 
  - Performace
  - Semantica
