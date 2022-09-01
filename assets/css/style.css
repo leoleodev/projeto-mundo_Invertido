@@ -5,12 +5,7 @@
 }
 
 .light-theme {
-    --page-background: linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #ffffff 65%,
-      rgba(255, 255, 255, 0.75) 100%
-    );
+    --page-background: linear-gradient(180deg,#ffffff 0%,#ffffff 65%,rgba(255, 255, 255, 0.75) 100%);
     --header-background-color: #e3e3e3;
     --highlight-color: #000000;
     --featured-font-family: "Archivo", sans-serif;
@@ -75,6 +70,7 @@ header::before{
     background-size: cover;
     background-position: center 90%;
     filter: saturate(0);
+    z-index: -1;
     opacity: 0.2;
 }
 
@@ -88,7 +84,6 @@ header div.headerpt1{
     justify-content: space-between;
     gap: 1rem 0;
 
-    z-index: 2;
 }
 img.logo{
     width: 25rem;
@@ -126,17 +121,43 @@ header div p{
     height: 20rem;
 }
 #top-characters{
-
-    background-color: var(--character-top-image-color);
-
-    mask: var(--character-top-image-src) botton / 100% no-repeat;
-    -webkit-mask: var(--character-top-image-src) botton / 100% no-repeat;
-
+    background-image: url(../images/characters/kids-on-the-bike.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
 }
-#bottom-characters{
+#bottom-characters{    
+    background-image: url(../images/characters/inverted-world-monster.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
 
-    
+    opacity: 0.15;
 
+    transform: rotate(180deg) scaleX(-1);
 }
+main{
+    width: 80vw;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 5rem 0;
+}
+section.sec1 div{
+    width: 50%;
+}
+section.sec1 div h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
 
