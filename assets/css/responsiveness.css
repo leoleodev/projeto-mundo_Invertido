@@ -3,10 +3,16 @@
     html{
         font-size: 93.75%;
     }
+    header div.headerpt1{
+        width: 100vw;
+    }
 }
 
 @media(max-width: 720px){
     html{
         font-size: 87.5%;
+    }
+    header div.headerpt1{
+        width: 100vw;
     }
 }
