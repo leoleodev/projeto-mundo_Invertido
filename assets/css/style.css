@@ -161,3 +161,21 @@ section.sec1 div h1{
     margin-bottom: 2rem;
 }
 
+iframe{
+    max-width: 100%;
+    max-height: 100%;
+
+    box-shadow: -20px 20px 0 rgba(207, 15, 15, 1);
+}
+section.sec2 div h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+section.sec2 div{
+    width: 50%;
+}
+
+section.sec2 div h2, section.sec2 div p{
+    text-align: right;
+}
+

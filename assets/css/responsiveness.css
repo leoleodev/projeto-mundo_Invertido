@@ -9,7 +9,34 @@
     header div.headerpt1{
         width: 100vw;
     }
+    section.sec1 div{
+        width: 100%;
+    }
+    section.sec2 div{
+        width: 100%;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        
+    }
+    main{
+        width: 92vw;
+        text-align: center;
+    }
+    section.sec2 div h2, section.sec2 div p{
+        text-align: center;
+    }
+    iframe{    
+        box-shadow: -8px 8px 0 rgba(207, 15, 15, 1);
+        margin: 0 0 2rem 0;
+    }
 }
+
+
 
 @media(max-width: 720px){
     html{
@@ -20,5 +47,26 @@
     }
     header div.headerpt1{
         width: 100vw;
+    }
+    section.sec1 div{
+        width: 100%;
+    }
+    section.sec2 div{
+        width: 100%;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        
+    }
+    main{
+        width: 92vw;
+        text-align: center;
+    }
+    section.sec2 div h2, section.sec2 div p{
+        text-align: center;
     }
 }
