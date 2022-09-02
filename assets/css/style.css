@@ -151,6 +151,8 @@ section{
     justify-content: space-between;
     align-items: center;
 
+    width: 100%;
+
     margin: 5rem 0;
 }
 section.sec1 div{
@@ -166,6 +168,9 @@ iframe{
     max-height: 100%;
 
     box-shadow: -20px 20px 0 rgba(207, 15, 15, 1);
+    border: 2px solid;
+    border-image: linear-gradient(#CF0F0F, #ffffff);
+    border-image-slice: 10;
 }
 section.sec2 div h2{
     font-size: 3rem;
@@ -177,5 +182,31 @@ section.sec2 div{
 
 section.sec2 div h2, section.sec2 div p{
     text-align: right;
+}
+
+section.sec3 div{
+    width: 100%;
+}
+section.sec3 div ul{
+    width: 100%;
+    list-style: none;
+
+    display: flex;
+    
+
+}
+section.sec3 div ul li{
+    width: 100%;
+    
+}
+section.sec3 div ul li img{
+    width: 25rem;
+    height: 10rem;
+}
+
+section.sec3 div h2{
+    width: 50%;
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
