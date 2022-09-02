@@ -179,6 +179,9 @@ section.sec2 div h2{
 section.sec2 div{
     width: 50%;
 }
+section.sec2 div.around{
+    padding-left: 4rem;
+}
 
 section.sec2 div h2, section.sec2 div p{
     text-align: right;
@@ -186,27 +189,107 @@ section.sec2 div h2, section.sec2 div p{
 
 section.sec3 div{
     width: 100%;
+    background-image: url(../images/backgrounds/lamps.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right center;
 }
 section.sec3 div ul{
-    width: 100%;
     list-style: none;
-
     display: flex;
-    
-
 }
 section.sec3 div ul li{
     width: 100%;
-    
 }
 section.sec3 div ul li img{
     width: 25rem;
     height: 10rem;
-}
 
+    outline: 20px solid #000;
+    border: 3px solid #CF0F0F;
+}
 section.sec3 div h2{
     width: 50%;
     font-size: 3rem;
     margin-bottom: 2rem;
+}
+
+section.sec4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+}
+section.sec4 > h2{
+    width: 50%;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+section.sec4 > p{
+    margin-bottom: 2rem;
+}
+section.sec4 > div{
+    padding: 5rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section.sec4 > div h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+section.sec4 > div h2 span{
+    color: #000;
+}
+section.sec4 > div form{
+    width: 50%;
+    background: #CF0F0F;
+    padding: 1rem;
+}
+section.sec4 > div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem 0;
+
+    box-shadow: 20px 20px 0 rgba(16, 16, 16, 1);
+}
+label{
+    color: #ffffff;
+    text-align: left;
+}
+input{
+    height: 2.5rem;
+}
+input, textarea{
+    border: 1px solid #b5bbbf;
+    background: #101010;
+    border-radius: 5px;
+    color: #ffffff;
+}
+label, input, textarea{
+    width: 100%;
+
+}
+
+input[type="submit"]{
+    margin-top: 2rem;
+    width: 50%;
+    border: 0;
+    transition: 1s;
+    font-weight: 900;
+}
+input[type="submit"]:hover{
+    background: #fff;
+    color: #000;
+    cursor: pointer;
 }
 

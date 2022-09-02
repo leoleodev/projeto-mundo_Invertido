@@ -15,6 +15,15 @@
     section.sec2 div{
         width: 100%;
     }
+    section.sec3 div{
+        width: 100%;
+    }
+    section.sec4{
+        width: 100%;
+    }
+    section.sec2 div.around{
+        padding-left: 0;
+    }
     section{
         display: flex;
         flex-direction: column;
@@ -34,6 +43,40 @@
         box-shadow: -8px 8px 0 rgba(207, 15, 15, 1);
         margin: 0 0 2rem 0;
     }
+    section.sec3 div ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem 0;
+    }
+    section.sec3 div h2{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    section.sec3 div{
+        background: none;
+    }
+    section.sec4 > h2, section.sec4 > p{
+        width: 100%;
+    }
+    section.sec4 > div h2{
+        font-size: 2rem;
+        width: 90%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    section.sec4 > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    section.sec4 > div form{
+        width: 100%;
+        box-shadow: 8px 8px 0 rgba(16, 16, 16, 1);
+
+    }
+    
 }
 
 
@@ -54,6 +97,9 @@
     section.sec2 div{
         width: 100%;
     }
+    section.sec2 div.around{
+        padding-left: 0;
+    }
     section{
         display: flex;
         flex-direction: column;
@@ -68,5 +114,14 @@
     }
     section.sec2 div h2, section.sec2 div p{
         text-align: center;
+    }
+    section.sec3 div ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem 0;
+    }
+    section.sec3 div{
+        background: none;
     }
 }
