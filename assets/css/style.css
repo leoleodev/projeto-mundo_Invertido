@@ -146,6 +146,7 @@ main{
     align-items: center;
     justify-content: center;
 }
+
 section{
     display: flex;
     justify-content: space-between;
@@ -293,3 +294,30 @@ input[type="submit"]:hover{
     cursor: pointer;
 }
 
+
+footer{
+
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.5) 0%, rgba(0,0,0,1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    width: 50%;
+    padding: 2rem 0;
+    text-align: center;
+}
+footer p:last-child{
+    color: #ffffff;
+}
+footer hr{
+    width: 40%;
+    height: 1px;
+}
