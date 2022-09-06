@@ -13,12 +13,12 @@ function changeTheme(){
     const audio = document.getElementById('song');
     audio.src = `assets/musics/${music}`;
     audio.play();
-    audio.volume = 0.3;
+    audio.volume = 0.2;
 }
 
 window.addEventListener('click', function() {
     const audio = document.getElementById('song');
     audio.play();
-    audio.volume = 0.3;
+    audio.volume = 0.2;
   })
 

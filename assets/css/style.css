@@ -312,13 +312,14 @@ input, textarea{
     background: #101010;
     border-radius: 5px;
     color: #ffffff;
+    padding: 1rem;
 }
 label, input, textarea{
     width: 100%;
 
 }
 
-input[type="submit"]{
+form button{
     margin-top: 2rem;
     width: 50%;
     border: 0;
@@ -326,8 +327,12 @@ input[type="submit"]{
     font-weight: 900;
     font-family: var(--featured-font-family);
     letter-spacing: 0.5rem;
+    border: none;
+    background: var(--field-background-color);
+    color: var(--primary-color-contrast);
+    padding: 0.8rem 0;
 }
-input[type="submit"]:hover{
+form button:hover{
     background: #fff;
     color: #000;
     cursor: pointer;
