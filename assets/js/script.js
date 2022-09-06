@@ -1,4 +1,8 @@
 
+const buttonChange = document.querySelector('.buttonCahnge');
+
+buttonChange.addEventListener('click', changeTheme);
+
 function changeTheme(){
     document.body.classList.toggle('dark-theme');
     document.body.classList.toggle('ligth-theme');
@@ -17,3 +21,4 @@ window.addEventListener('click', function() {
     audio.play();
     audio.volume = 0.3;
   })
+
