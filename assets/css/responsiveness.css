@@ -9,6 +9,9 @@
     header div.headerpt1{
         width: 100vw;
     }
+    header div.headerpt1 p{
+        width: 90%;
+    }
     section.sec1 div{
         width: 100%;
     }
@@ -28,9 +31,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-    
-        
+        align-items: center;  
+    }
+    .button{
+        width: 15rem;
+        font-size: 0.8rem;
     }
     main{
         width: 92vw;
@@ -75,6 +80,9 @@
         width: 100%;
         box-shadow: 8px 8px 0 rgba(16, 16, 16, 1);
 
+    }
+    input[type="submit"]{
+        width: 90%;
     }
     footer p{
         width: 90%;

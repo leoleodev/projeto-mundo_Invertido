@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    transition: 1s;
 }
+
+:root {
+    --primary-color: #cf0f0f;
+    --primary-color-contrast: #ffffff;
+    --field-background-color: #000;
+  }
 
 .light-theme {
     --page-background: linear-gradient(
@@ -15,7 +22,7 @@
     );
     --header-background-color: #e3e3e3;
     --highlight-color: #000000;
-    --featured-font-family: "Archivo", sans-serif;
+    --featured-font-family: 'Archivo Black', sans-serif;
     --character-top-image-src: url("../images/characters/kids-on-the-bike.svg");
     --character-top-image-color: #ffffff;
     --character-bottom-image-src: url("../images/characters/inverted-world-monster.svg");
@@ -59,16 +66,19 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background: var(--page-background);
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Archivo Black', sans-serif;
-    font-weight: 400;
-    color: #CF0F0F;
+    font-family: var(--featured-font-family);
+    font-weight: 900;
+    color: var(--primary-color);
 }
 p{
     font-family: 'Libre Baskerville', serif;
     font-weight: 400;
-    color: #000;
+    color: var(--highlight-color);
+    line-height: 1.5rem;
 }
 
 header{
@@ -120,15 +130,17 @@ header div p{
     text-align: center;
 }
 .button{
-    width: 15rem;
+    width: 20rem;
     height: 4rem;
     text-transform: uppercase;
-    color: #CF0F0F;
-    border: 3px solid #CF0F0F;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
     background: transparent;
 
-    font-family: 'Archivo Black', sans-serif;
-    font-weight: 400;
+    font-family: var(--featured-font-family);
+    font-weight: 900;
+    font-size: 1.1rem;
+    padding: 1rem;
 
     display: flex;
     align-items: center;
@@ -138,8 +150,8 @@ header div p{
 }
 .button:hover{
     cursor: pointer;
-    color: #fff;
-    background: #CF0F0F;
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
 }
 .world-characters{
     width: 100%;
@@ -159,7 +171,7 @@ header div p{
     background-position-x: center;
     background-position-y: bottom;
 
-    opacity: 0.15;
+    opacity: 0.5;
 
     transform: rotate(180deg) scaleX(-1);
 }
@@ -312,6 +324,8 @@ input[type="submit"]{
     border: 0;
     transition: 1s;
     font-weight: 900;
+    font-family: var(--featured-font-family);
+    letter-spacing: 0.5rem;
 }
 input[type="submit"]:hover{
     background: #fff;

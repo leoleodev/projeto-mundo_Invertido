@@ -7,11 +7,12 @@
     <title>Mundo Invertido</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsiveness.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville&family=Rubik+Glitch&display=swap" rel="stylesheet">
 </head>
-<body class="light-theme">
+<body class="ligth-theme">
 
     <header>
 
@@ -28,7 +29,7 @@
             Vecna. Você está preparado? Então clique no botão abaixo para entrar
             no Mundo Invertido!
             </p>
-            <button class="button"> Inverter Mundo </button>
+            <button onclick="changeTheme()" class="button"> Inverter Mundo </button>
         </div>
 
         <div id="top-characters" class="world-characters"></div>
@@ -91,13 +92,13 @@
                 <h2>A segunda série mais assistida da netflix</h2>
 
                 <ul>
-                    <li>
+                    <li class="invert-element">
                         <img src="./assets/images/content/serie-image-01.png" alt="">
                     </li>
-                    <li>
+                    <li class="invert-element">
                         <img src="./assets/images/content/serie-image-02.png" alt="">
                     </li>
-                    <li>
+                    <li class="invert-element">
                         <img src="./assets/images/content/serie-image-03.png" alt="">
                     </li>
                 </ul>
@@ -157,6 +158,9 @@
         </P>
 
     </footer>
+
+
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
